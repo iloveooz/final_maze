@@ -3,7 +3,6 @@
 // g++ -c maze.cpp -o maze.o -I"I:/SFML/include"
 
 // g++ main.o maze.o cell.o -o main -L"I:/SFML/lib" -lsfml-graphics-s -lsfml-window-s -lsfml-audio-s -lsfml-system-s -lsfml-network-s -lwinmm -lopengl32 -lopenal32 -lflac -lvorbisenc -lvorbisfile -lvorbis -logg -lws2_32 -lgdi32 -lkernel32 -luser32 -lwinspool -lshell32 -lole32 -luuid -lcomdlg32 -lfreetype -ladvapi32
-//https://www.spoj.com/G7S91HC6/problems/main/sort=0,start=0
 
 #include "Maze.h"
 
