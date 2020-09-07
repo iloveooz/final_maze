@@ -292,7 +292,7 @@ void Maze::createVertexArray(int explicitCheck)
     {
         if(!backtrack.empty())
         {
-            float first=initial-(round(backtrack.back()/cols)) * (initial/rows);
+            float first=initial-(int(backtrack.back()/cols)) * (initial/rows);
             float second=1 - first;
 
             quadColor.r=(start.r*first)+(end.r*second);
@@ -309,7 +309,7 @@ void Maze::createVertexArray(int explicitCheck)
             {
                 handleBorder((backtrack.back()*8),localBorderColor,-1,-1,backtrack.back());
 
-                first=initial-round((backtrack[backtrack.size()-2])/cols) * (initial/rows);
+                first=initial-int((backtrack[backtrack.size()-2])/cols) * (initial/rows);
                 second=1 -first;
 
                 quadColor.r=(start.r*first)+(end.r*second);
